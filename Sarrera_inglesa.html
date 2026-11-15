@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="erronka.css">
+		<script src="erronka.js"></script>
+		<title>Ermua_Gaztelekua</title>			
+	</head>
+	<body STYLE="margin:0px">
+		<header style="margin:0px;padding:0px 8px 0px 8px">
+			<a href="Sarrera_inglesa.html" class="logazo">
+				<img src="argazkiak/gazteleku.png" alt="Gazteleku Logo">
+			</a>
+			<nav style="width:1000px;margin:90px 16px 0px 16px;">
+				<a href="Ezagutu_gaizu_inglesa.html">
+					<button class="EZAGUTU_GAITZAZU" id="Ezagutu gaitzazu">ABOUT US</button>
+				</a>
+				<a href="Ekintzak_inglesa.html">
+					<button class="EKINTZAK" id="Ekintzak" Style="border:3px solid white;background-color:green;">ACTIVITIES</button>
+				</a>
+				<a href="Monitoreak_inglesa.html">
+					<button class="MONITOREAK" id="Monitoreak">INSTRUCTORS</button>
+				</a>
+			</nav>
+			<div style="margin:8px 0px 8px auto;">
+				<div style="text-align:center"> <a href="Sarrera.html" style="cursor:pointer;">EUS </a> | <a href="Sarrera_inglesa.html" style="cursor:pointer;">EN </a> </div>  
+				<button class="phbnagusi" onclick="bazkzaraireki()">Participate</button> <br/>
+				<div style="text-align:center;cursor:pointer"> <a onclick="bazkformireki()">Become a member</a> </div>
+			</div>
+		</header>
+		
+	
+		<div class="Karrusela">
+			<button class="atzerako_botoia" id="atzera">&#10094;</button>
+			
+			<div class="karrusel_pasa_paginak">
+				<div class="slide slide_aktiboa">
+					<img src="argazkiak/Gaztelekua.png" >
+					<div class="caption"></div>
+				</div>
+				<div class="slide">
+					<img src="argazkiak/Mendi_buelta.png" >
+					<div class="caption"></div>
+				</div>
+				<div class="slide">
+					<img src="argazkiak/Akanpada.png" >
+					<div class="caption"></div>
+				</div>
+			</div>
+			
+			<button class="aurrerako_botoia" id="aurrera">&#10094;</button>
+		</div>
+	
+	<form class="bazkidebihurtuform" id="bazkbihuform" >
+				<div style="display:flex">
+				<h4>Become a member</h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="bazkformitxi()">X</p>
+				</div>
+				<label>ID Number* </label><br/>
+				<input type="text" required pattern="[0-9]{8}[A-Z]" placeholder="12345678A"></input> <br/>
+				<label>Name* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Last Name* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Phone Number* </label><br/>
+				<input type="text" required pattern="[0-9]{9}"></input> <br/>
+				<label>Date of birth* </label><br/>
+				<input type="text" required pattern="\d{4}/(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])" placeholder="UUUU/HH/EE" ></input> <br/>
+				<label>Nationality* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<br/>
+				<button type="submit"> Submit </button>
+				
+			</form>
+		
+		<div class="partehartuform" id="bazkzara">
+			<div style="display:flex">
+				<h4>Participate <br/> <span style="font-size:12px">Are you a member?<span></h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="bazkzaraitxi()">X</p>
+			</div>
+			<button onclick="phbazkireki()">Yes</button> <button onclick="phezbazkireki()">No</button>
+			<a style="font-size:8px;cursor:pointer;" onclick="bazkformireki()">Become a member</a>
+		</div>
+		
+		<form class="partehartuform" id="bazkphform">
+			<div style="display:flex">
+				<h4>Participate</h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="phbazkitxi()">X</p>
+				</div>
+				<label>Member code* </label><br/>
+				<input type="text" required ></input> <br/>
+				<label>>Activity code* </label><br/>
+				<input type="text" required ></input> <br/>
+				<br/>
+				<button type="submit"> Submit </button>
+		
+		</form>
+		<form class="partehartuform" id="ezbazkphform">
+			<div style="display:flex">
+				<h4>Parte hartu</h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="phezbazkitxi()">X</p>
+				</div>
+				<label>Id Number* </label><br/>
+				<input type="text" required pattern="[0-9]{8}[A-Z]" placeholder="12345678A"></input> <br/>
+				<label>Name* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Last name* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Phone number* </label><br/>
+				<input type="text" required pattern="[0-9]{9}"></input> <br/>
+				<label>Date of birth* </label><br/>
+				<input type="text" required pattern="\d{4}/(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])" placeholder="UUUU/HH/EE" ></input> <br/>
+				<label>Nationaity* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>>Activity code* </label><br/>
+				<input type="text" required ></input> <br/>
+				<br/>
+				<button type="submit"> Submit </button>
+		</form>
+	
+	<script>
+		const slides = document.querySelectorAll('.karrusel_pasa_paginak > div');
+		let i = 0;
+
+		function cambiarSlide(nuevoIndice) {
+			slides[i].classList.remove('slide_aktiboa');
+			i = (nuevoIndice + slides.length) % slides.length;
+			slides[i].classList.add('slide_aktiboa');
+		}
+
+		document.getElementById('atzera').onclick = () => cambiarSlide(i - 1);
+		document.getElementById('aurrera').onclick = () => cambiarSlide(i + 1);
+	</script>
+	
+		<div class="Orokorra">
+			<h2>WHO ARE WE?</h2> </br>
+			<p>We are a youth center created thanks to the Ermua Town Council. Here, we organize activities for both locals and visitors.</p> </br>
+			<p>If you want to find out more information, click on the 'ABOUT US' button.</p>
+		</div>
+		
+	<footer >
+			<h3>CONTACT INFORMATION</h3> 
+			<p> Tel: 123456789</p> 
+			<p> Email: eibar@uni.eus</p> 
+			<p> Address: Ermua</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="erronka.css">
+	<script src="erronka.js"></script>
+	<title> Gazteleku - About Us </title>
+	<style>
+	
+		article
+		{
+			margin: 5px;
+			padding:10px;
+		}
+		
+		button
+		{
+		 cursor:pointer;
+		}
+		
+		
+		#logoa
+		{
+		 border-radius: 12px;
+		}
+		
+		#PH
+		{
+		 border-radius: 12px;
+		}
+		
+		#BB
+		{
+		 text-align:right;
+		 color:white;
+		 font-size:15;
+		}
+		div.content
+		{
+		 display:flex;
+		 flex-direction:row;
+		 flex-wrap: wrap;
+		 margin: 10px;
+	     padding: 20px;
+		 flex-direction:row;
+		 font-size:25;
+		}
+		
+		article
+		{
+		  text-align:left;
+		  margin:40px;
+		  padding:40px;
+		  float:left;
+		}
+		
+		
+		
+		div.imaginak
+		{
+		 width: 65%;
+         background-color: white;
+		 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		 padding:30px;
+		 margin:30px;
+		}
+		
+		
+		img 
+		{
+		 width: 65%;
+		}
+		
+		div.caption
+		{
+		 text-align: center;
+         padding: 30px;
+		 align-self: flex-start;
+		}
+		
+		
+		.hizkuntza_b
+		{
+		 background-color:green;
+		 border:none;
+		}
+		
+		.b_printzipalak
+		{
+		 background-color:green;
+		 border-radius: 12px;
+		}
+	</style>
+</head>
+
+<body style="margin:0px;border-collapse:collapse;">
+
+	<header style="margin:0px;padding:0px 8px 0px 8px">
+			<a href="Sarrera_inglesa.html" class="logazo">
+				<img src="argazkiak/gazteleku.png" alt="Gazteleku Logo">
+			</a>
+			<nav style="width:1000px;margin:90px 16px 0px 16px;">
+				<a href="Ezagutu_gaizu_inglesa.html">
+					<button class="EZAGUTU_GAITZAZU" id="Ezagutu gaitzazu">ABOUT US</button>
+				</a>
+				<a href="Ekintzak_inglesa.html">
+					<button class="EKINTZAK" id="Ekintzak" Style="border:3px solid white;background-color:green;">ACTIVITIES</button>
+				</a>
+				<a href="Monitoreak_inglesa.html">
+					<button class="MONITOREAK" id="Monitoreak">INSTRUCTORS</button>
+				</a>
+			</nav>
+			<div style="margin:8px 0px 8px auto;">
+				<div style="text-align:center"> <a href="Ezagutu_gaizu.html" style="cursor:pointer;">EUS </a> | <a href="Ezagutu_gaizu_inglesa.html" style="cursor:pointer;">EN </a> </div>  
+				<button class="phbnagusi" onclick="bazkzaraireki()">Participate </button> <br/>
+				<div style="text-align:center;cursor:pointer"> <a onclick="bazkformireki()">Become a member </a> </div>
+			</div>
+		</header>
+		
+		
+		<div class="content">
+			<article>
+				<h3> Who are we?</h3>
+				<p> The Gazteleku initiative started in 2026. It was created in Ermua to organize activities aimed at the town's youth. At first, it was limited to summer activities, but thanks to the great reception it received, they are now organized throughout the entire year. This organization is possible thanks to the instructors, as they are responsible for looking after the young people.</p>
+				<div class="imaginak">	
+							<img src="argazkiak/Gaztelekua.png" >
+							<div class="caption">
+							<p style=color:black;> Inside the Gazteleku</p>
+							</div>
+				</div>
+				<br>
+				<br>
+				
+				<h3> What do we do? </h3>
+				<p> The Gazteleku association organizes activities in the Basque Country and its surrounding areas. Our calendar is not limited to summer; rather, all kinds of activities are organized all year round. There are more outings during holiday seasons, though they also take place on weekends.</p>
+				<div class="imaginak">
+							<img src="argazkiak/Akanpada.png" >
+							<div class="caption">
+							<p style=color:black;>Camping [2026/08/20]</p>
+							</div>
+				</div>
+				<br>
+				<br>
+				
+				<h3> Who is it aimed at? </h3>
+				<p> Our activities are aimed at young people aged 12–18. Since most of them are organized in the Ermua area, local youth usually participate. This does not mean only they can take part; anyone who speaks Basque or English can sign up. The summer camps organized in the summer are international, giving young people the opportunity to interact with other cultures. To make this possible, instructors with English qualifications assist them. </p>
+				<div class="imaginak">
+							<img src="argazkiak/Mendi_buelta.png" >
+							<div class="caption">
+							<p style=color:black;>Mountain activity [2026/07/10]</p>
+							</div>
+							</div>
+				
+			</article>
+			
+		</div>
+			
+			
+		
+		</div>
+		
+		<form class="bazkidebihurtuform" id="bazkbihuform" >
+				<div style="display:flex">
+				<h4>Become a member</h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="bazkformitxi()">X</p>
+				</div>
+				<label>ID Number* </label><br/>
+				<input type="text" required pattern="[0-9]{8}[A-Z]" placeholder="12345678A"></input> <br/>
+				<label>Name* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Last Name* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Phone number* </label><br/>
+				<input type="text" required pattern="[0-9]{9}"></input> <br/>
+				<label>Date of birth* </label><br/>
+				<input type="text" required pattern="\d{4}/(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])" placeholder="UUUU/HH/EE" ></input> <br/>
+				<label>Nationality* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<br/>
+				<button type="submit"> Submit </button>
+				
+			</form>
+		
+		<div class="partehartuform" id="bazkzara">
+			<div style="display:flex">
+				<h4>Participate <br/> <span style="font-size:12px">Are you a member?<span></h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="bazkzaraitxi()">X</p>
+			</div>
+			<button onclick="phbazkireki()">Yes</button> <button onclick="phezbazkireki()">No</button>
+			<a style="font-size:8px;cursor:pointer;" onclick="bazkformireki()">Become a member</a>
+		</div>
+		
+		<form class="partehartuform" id="bazkphform">
+			<div style="display:flex">
+				<h4>Participate</h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="phbazkitxi()">X</p>
+				</div>
+				<label>Member code* </label><br/>
+				<input type="text" required ></input> <br/>
+				<label>>Activity code* </label><br/>
+				<input type="text" required ></input> <br/>
+				<br/>
+				<button type="submit"> Submit </button>
+		
+		</form>
+		<form class="partehartuform" id="ezbazkphform">
+			<div style="display:flex">
+				<h4>Participate</h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="phezbazkitxi()">X</p>
+				</div>
+				<label>ID Number* </label><br/>
+				<input type="text" required pattern="[0-9]{8}[A-Z]" placeholder="12345678A"></input> <br/>
+				<label>Name* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Last name* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Phone number* </label><br/>
+				<input type="text" required pattern="[0-9]{9}"></input> <br/>
+				<label>Date of birth* </label><br/>
+				<input type="text" required pattern="\d{4}/(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])" placeholder="UUUU/HH/EE" ></input> <br/>
+				<label>Nationality* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>>Activity code* </label><br/>
+				<input type="text" required ></input> <br/>
+				<br/>
+				<button type="submit"> Submit </button>
+		</form>
+		
+		<footer>
+			<h3>CONTACT INFORMATION</h3> 
+			<p> Tel: 123456789</p> 
+			<p> Email: eibar@uni.eus</p> 
+			<p> Address: Ermua</p>
+		</footer>
+			
+		
+		
+	
+</body>
+</html>
